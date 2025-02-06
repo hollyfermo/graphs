@@ -25,9 +25,9 @@ x = range(n_places)  # Using range instead of places directly
 fig, ax = plt.subplots(figsize=(10, 6))
 
 # Create bars for eco2, temperature, and humidity
-bars1 = ax.bar([i - width for i in x], eco2_values, width, label='eco2')
-bars2 = ax.bar(x, humidity_values, width, label='Humidity')
-bars3 = ax.bar([i + width for i in x], temperature_values, width, label='Temperature')
+bars1 = ax.bar([i - width for i in x], eco2_values, width, label='eco2', color='red')
+bars2 = ax.bar(x, humidity_values, width, label='Humidity', color='blue')
+bars3 = ax.bar([i + width for i in x], temperature_values, width, label='Temperature', color='green')
 
 # Add labels, title, and legend
 ax.set_xlabel('Places')
